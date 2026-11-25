@@ -17,6 +17,6 @@ Key Features:
 
 How to use:
 1. Open the extension's Options page.
-2. Add one or more regular expressions to the Activation List (e.g., /^https?:\/\/localhost:8080\//i or /^https:\/\/api\.example\.com\//i) and click Save.
+2. Add one or more regular expressions to the Activation List (e.g.,`/^https?:\/\/localhost:8080\//i` or `/^https:\/\/api\.example\.com\//i`) and click Save.
 3. Click the OffCORS toolbar icon so it turns green.
 Disclaimer: Intended for local web development, API testing, and debugging purposes.
