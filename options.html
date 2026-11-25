@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		 <title>OffCORS Options</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" type="text/css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div id="options">
+            <h1>Options</h1>
+            <form>
+                <fieldset>
+                    <legend>Enabled at startup</legend>
+                    <label>
+                        <input type="checkbox" id="enabledAtStartup"> On
+                    </label>
+                </fieldset>
+                <fieldset id="listarea">
+                    <legend>Activation List</legend>
+                    <div id="info">
+                        Specify on which url the addon will activate.
+						<br>
+                        One filter per line.
+						<br>
+                        The addon must still be enabled first.
+                    </div>
+                    <textarea rows="12" placeholder="This uses regular expressions (ex: /^https:?\/\/localhost:8080\//i)" id="activationList"></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>Remember to save your changes</legend>
+                    <button type="submit">Save</button>
+					<span id="status"></span>
+                </fieldset>
+            </form>
+        </div>
+        <script src="options.js"></script>
+    </body>
+</html>
