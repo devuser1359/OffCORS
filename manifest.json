@@ -39,7 +39,10 @@
   }],
   "browser_specific_settings": {
     "gecko": {
-      "id": "offcors@devuser1359"
+      "id": "offcors@devuser1359",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
     }
   }
 }
