@@ -1,0 +1,38 @@
+#options {
+    border:2px solid #AAA;
+	text-align:center;
+}
+#options > h1 {
+    margin:0;
+    padding:4px;
+    background-color:#AAA;
+	text-align:center;
+}
+#options > form {
+    padding:4px;
+}
+#options legend {
+    font-weight:bold;
+	margin:auto;
+}
+#activationList {
+	width:100%;
+	margin-top:2px;
+	box-sizing: border-box;
+}
+#info {
+	text-align:left;
+}
+label {
+	display:block;
+	text-align:center;
+}
+button {
+	width:50%;
+	height:30px;
+	display:block;
+	margin:0 auto;
+	text-align:center;
+	padding-left:0;
+	cursor: pointer;
+}

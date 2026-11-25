@@ -1,0 +1,45 @@
+{
+  "manifest_version": 2,
+  "name": "OffCORS",
+  "version": "1.0",
+  "author": "devuser1359",
+  "description": "Bypass CORS restrictions for whitelisted URLs",
+  "icons": {
+    "48": "icons/icon-on.svg",
+    "96": "icons/icon-on.svg"
+  },
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "storage",
+    "<all_urls>"
+  ],
+  "web_accessible_resources": [
+    "page-helper.js"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_title": "OffCORS",
+    "default_icon": {
+      "48": "icons/icon-off.svg",
+      "96": "icons/icon-off.svg"
+    }
+  },
+  "options_ui": {
+    "page": "options.html",
+    "browser_style": true
+  },
+  "content_scripts": [{
+    "js": ["content.js"],
+    "matches": ["<all_urls>"],
+    "run_at": "document_start",
+    "all_frames": true
+  }],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "offcors@devuser1359"
+    }
+  }
+}
